@@ -220,6 +220,109 @@ body {
     font-weight: bold;
 }
 
+@keyframes start {
+    0% {
+        transform: translate(-2000%, 0px);
+        -webkit-transform: translate(-2000%, 0px);
+        -moz-transform: translate(-2000%, 0px);
+        -ms-transform: translate(-2000%, 0px);
+        -o-transform: translate(-2000%, 0px);
+        opacity: 0;
+    }
+    39% {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    41% {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        transition-timing-function: ease-in;
+        opacity: 1;
+    }
+    43% {
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+        -ms-transform: translate(0px, 5px);
+        -o-transform: translate(0px, 5px);
+        opacity: 1;
+    }
+    46% {
+        transform: translate(20px, -50px);
+        -webkit-transform: translate(20px, -50px);
+        -moz-transform: translate(20px, -50px);
+        -ms-transform: translate(20px, -50px);
+        -o-transform: translate(20px, -50px);
+        opacity: 1;
+    }
+    48% {
+        transform: translate(20px, 0px);
+        -webkit-transform: translate(20px, 0px);
+        -moz-transform: translate(20px, 0px);
+        -ms-transform: translate(20px, 0px);
+        -o-transform: translate(20px, 0px);
+        transition-timing-function: ease-out;
+        opacity: 1;
+    }
+    53% {
+        transform: translate(20px, 0px);
+        -webkit-transform: translate(20px, 0px);
+        -moz-transform: translate(20px, 0px);
+        -ms-transform: translate(20px, 0px);
+        -o-transform: translate(20px, 0px);
+        opacity: 1;
+    }
+    70% {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    92% {
+        transform: translate(20px, 0px);
+        -webkit-transform: translate(20px, 0px);
+        -moz-transform: translate(20px, 0px);
+        -ms-transform: translate(20px, 0px);
+        -o-transform: translate(20px, 0px);
+        opacity: 1;
+    }
+    98% {
+        transform: translate(200px, 0px);
+        -webkit-transform: translate(200px, 0px);
+        -moz-transform: translate(200px, 0px);
+        -ms-transform: translate(200px, 0px);
+        -o-transform: translate(200px, 0px);
+        transition-timing-function: ease-out;
+        opacity: 0;
+    }
+    99% {
+        transform: translate(2000%, 0px);
+        -webkit-transform: translate(2000%, 0px);
+        -moz-transform: translate(2000%, 0px);
+        -ms-transform: translate(2000%, 0px);
+        -o-transform: translate(2000%, 0px);
+        transition-timing-function: ease-out;
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-2000%, 0px);
+        -webkit-transform: translate(-2000%, 0px);
+        -moz-transform: translate(-2000%, 0px);
+        -ms-transform: translate(-2000%, 0px);
+        -o-transform: translate(-2000%, 0px);
+        opacity: 0;
+    }
+}
+
 #profile_img {
     width: 180px;
     height: 180px;
@@ -230,6 +333,11 @@ body {
     border-radius: 5px;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+    animation-name: start;
+    -webkit-animation: start;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: both;
 }
 
 #profile div {
@@ -278,11 +386,9 @@ body {
     font-size: 16px;
 }
 
-#work {
-    margin: 2vh 0px;
-    padding: 4vh 0px !important;
-}
-
+#work,
+#experience,
+#skill,
 #forks {
     margin: 2vh 0px;
     padding: 4vh 0px !important;
@@ -452,7 +558,10 @@ body {
         max-height: 120px;
         margin: 0px auto !important;
     }
-    #work {
+    #work,
+    #experience,
+    #forks,
+    #skill {
         margin: 0px;
     }
     .projects {
