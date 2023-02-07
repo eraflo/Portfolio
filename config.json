@@ -5,10 +5,14 @@
   "userimg": "https://avatars.githubusercontent.com/u/81640753?v=4",
   "sort": "created",
   "order": "asc",
-  "includeFork": false,
-  "theme": "light.css",
+  "includeFork": true,
+  "theme": "dark.css",
   "types": [
-   "all"
-  ]
+   "owner"
+  ],
+  "twitter": null,
+  "linkedin": "https://www.linkedin.com/in/florian-maillard-89ab59256/",
+  "medium": null,
+  "dribbble": null
  }
 ]
