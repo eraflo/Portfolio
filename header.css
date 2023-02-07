@@ -122,9 +122,3 @@
 #onglet4 {
     animation-delay: 12s;
 }
-
-#onglet1:hover {
-    animation-name: hover;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-}
